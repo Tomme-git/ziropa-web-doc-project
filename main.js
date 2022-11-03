@@ -23,7 +23,7 @@ function buttonActive(elem) {
     var a = menubtn;
     for (i = 0; i < a.length; i++) {
         a[i].classList.remove('scaleButton')
-        if(i == a.length -1) {
+        if (i == a.length - 1) {
             a[i].style.background = "white";
         }
     }
@@ -31,14 +31,10 @@ function buttonActive(elem) {
 }
 
 function resetMenu() {
-    menubtn[0].style.background = "white";
-    menubtn[1].style.background = "white";
-    menubtn[2].style.background = "white";
-    menubtn[3].style.background = "white";
-    menubtn[4].style.background = "white";
-    menubtn[5].style.background = "white";
-    menubtn[6].style.background = "white";
-    menubtn[7].style.background = "white";
+    a = menubtn;
+    for (var i = 0; i < a.length; i++) {
+        a[i].style.background = "white";
+    }
 };
 
 var slideInLeft = {
